@@ -1,27 +1,30 @@
 import React from "react";
 import styles from "../assets/styles/home.module.scss";
 
-import profile from "../assets/images/Oyinloluwa.jpg";
-
 const Home = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.hero}>
+      <section className={styles.hero}>
         <div className={styles.lhs}>
           <h2>
-            Oyinloluwa
-            <br /> <span>Balogun</span>
+            Oyinloluwa <span>Balogun</span>
           </h2>
           <p>
             FRONTEND DEVELOPER<span>.</span>
           </p>
+          <ul>
+            <li className={styles.social}>Github</li>
+            <li className={styles.social}>LinkedIn</li>
+          </ul>
         </div>
         <div className={styles.rhs}>
-          <div>
-            <img src={profile} alt="Oyinloluwa" />
-          </div>
+          <div className={styles.me}></div>
+          <div className={styles.outline}></div>
         </div>
-      </div>
+      </section>
+      <section className={styles.projects}>
+        <h5>My Projects</h5>
+      </section>
     </div>
   );
 };
