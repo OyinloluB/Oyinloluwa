@@ -4,8 +4,14 @@
   justify-content: space-between;
   height: 10vh;
   padding: 10px 80px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
   font-family: "Work Sans", sans-serif;
+  position: sticky;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px;
+  }
 
   h1 {
     font-family: "Cookie", sans-serif;
@@ -25,15 +31,19 @@
     }
 
     li {
-      color: #000000;
       list-style: none;
-      font-size: 13px;
-      cursor: pointer;
-      font-weight: bold;
 
-      &:hover {
-        color: #4831d4;
+      a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        cursor: pointer;
         font-weight: bold;
+
+        &:hover {
+          color: #4831d4;
+          font-weight: bold;
+        }
       }
     }
   }

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import "../../assets/styles/navbar.scss";
 
 const Navbar = () => {
@@ -7,15 +8,20 @@ const Navbar = () => {
       <h1>O</h1>
       <div className="menu">
         <ul>
-          <li>About</li>
           <li
             style={{
               padding: "25px",
             }}
           >
-            Portfolio
+            <Link to="projects" spy={true} smooth={true} duration={1000}>
+              Projects
+            </Link>
           </li>
-          <li>Contact</li>
+          <li>
+            <Link to="contact" spy={true} smooth={true} duration={1000}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
