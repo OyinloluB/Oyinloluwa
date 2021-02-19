@@ -16,8 +16,15 @@ const Home = () => {
           </h2>
           <p>FRONTEND DEVELOPER.</p>
           <ul>
-            <li className={styles.social}>Github</li>
-            <li className={styles.social}>LinkedIn</li>
+            <li className={styles.social}>
+              <a href="https://github.com/OyinloluB">Github</a>
+            </li>
+            <li className={styles.social}>
+              <a href="https://www.linkedin.com/in/oyinlolu/">LinkedIn</a>
+            </li>
+            <li className={styles.social}>
+              <a href="https://docs.google.com/document/d/1gYl59EVwXHylCZmlyoTQm3oztqe4Fb2_hbxmYX-pX3I/edit?usp=sharing">Resume</a>
+            </li>
           </ul>
         </div>
         <div className={styles.rhs}>
@@ -34,7 +41,9 @@ const Home = () => {
               <div className={styles.content}>
                 <p>My Team</p>
                 <hr className={styles.line} />
-                <span>Visit Site</span>
+                <span>
+                  <a href="https://myteamfm.netlify.app/">Visit Site</a>
+                </span>
               </div>
             </div>
           </div>
@@ -44,7 +53,9 @@ const Home = () => {
               <div className={styles.content}>
                 <p>Photosnap</p>
                 <hr className={styles.line} />
-                <span>Visit Site</span>
+                <span>
+                  <a href="https://photosnapped.netlify.app/">Visit Site</a>
+                </span>
               </div>
             </div>
           </div>
@@ -54,7 +65,11 @@ const Home = () => {
               <div className={styles.content}>
                 <p>Minimalist Portfolio</p>
                 <hr className={styles.line} />
-                <span>Visit Site</span>
+                <span>
+                  <a href="https://minimalistportfolio.netlify.app/">
+                    Visit Site
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -62,9 +77,13 @@ const Home = () => {
             <img src={dine} alt="Dine" />
             <div className={styles.overlay}>
               <div className={styles.content}>
-                <p>Dine</p>
+                <p>
+                  Dine : <b>Work In Progress - View on Desktop</b>
+                </p>
                 <hr className={styles.line} />
-                <span>Visit Site</span>
+                <span>
+                  <a href="https://dine-website.netlify.app/">Visit Site</a>
+                </span>
               </div>
             </div>
           </div>
